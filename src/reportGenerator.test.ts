@@ -1,4 +1,4 @@
-import { AccessLog } from './parser/types';
+import type { AccessLog } from './parser/types';
 import { addToReport } from './reportGenerator';
 import type { RawReport } from './reportGenerator';
 

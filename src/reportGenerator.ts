@@ -3,7 +3,7 @@ import { ApacheLogLineParser } from './parser/apache';
 import { countInStream } from './report/count';
 import type { countResult } from './report/count';
 import { distinctInStream } from './report/distinct';
-import type { logger } from './logger/type';
+import type { Logger } from './logger/type';
 import type { AccessLog, LineParser } from './parser/types';
 
 export interface RawReport {
@@ -31,7 +31,7 @@ export function addToReport(reportResult: RawReport, data: AccessLog): RawReport
   return reportResult;
 }
 
-export function parseFileAsStream(file: string, customLogger: logger) {
+export function parseFileAsStream(file: string, customLogger: Logger) {
   return new Promise<RawReport>((resolve) => {
     let report: RawReport = {
       distinctIps: [],
