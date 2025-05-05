@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getTopResults WHEN list BIGGER than request PROVIDE what requested 1`] = `
+[
+  "abc",
+  "mno",
+]
+`;
+
+exports[`getTopResults WHEN list EMPTY than return empty array 1`] = `[]`;
+
+exports[`getTopResults WHEN list SMALLER than request PROVIDE entire array 1`] = `
+[
+  "abc",
+  "mno",
+  "xyz",
+]
+`;

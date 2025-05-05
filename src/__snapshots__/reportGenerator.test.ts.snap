@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addToReport WHEN new access log line PROVIDED that should be added to reports 1`] = `
+{
+  "activityIpsCount": [
+    {
+      "count": 1,
+      "item": "177.71.128.21",
+    },
+  ],
+  "distinctIps": [
+    "177.71.128.21",
+  ],
+  "visitedUrlsCount": [
+    {
+      "count": 1,
+      "item": "/intranet-analytics/",
+    },
+  ],
+}
+`;

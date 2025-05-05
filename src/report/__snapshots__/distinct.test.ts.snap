@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`distinct WHEN list PROVIDED then CREATE distinct result 1`] = `
+[
+  "abc",
+  "mno",
+]
+`;
+
+exports[`distinctInStream WHEN item EXISTS in list do not ADD 1`] = `
+[
+  "abc",
+  "mno",
+]
+`;
+
+exports[`distinctInStream WHEN item NOT EXISTS in list ADD 1`] = `
+[
+  "abc",
+  "mno",
+  "xyz",
+]
+`;
